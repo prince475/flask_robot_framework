@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.8.10 on linux)" generated="2024-12-10T02:03:49.461025" rpa="false" schemaversion="5">
+<suite id="s1" name="Flask Ui Tests" source="/home/prince/flask_robot_framework/tests/flask_ui_tests.robot">
+<test id="s1-t1" name="Open Flask Todo App" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-10T02:03:49.630149" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5000'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-10T02:03:49.629766" elapsed="2.338148"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-12-10T02:03:51.979180" level="INFO">Page title is 'Todo List'.</msg>
+<arg>Todo List</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-12-10T02:03:51.969146" elapsed="0.010248"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-12-10T02:03:52.010568" level="INFO">Current page contains text 'Learn Python'.</msg>
+<arg>Learn Python</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-12-10T02:03:51.979892" elapsed="0.030867"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-12-10T02:03:52.034307" level="INFO">Current page contains text 'Build Robot Framework tests'.</msg>
+<arg>Build Robot Framework tests</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-12-10T02:03:52.011241" elapsed="0.023276"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-12-10T02:03:52.058179" level="INFO">Current page contains text 'Write clean code'.</msg>
+<arg>Write clean code</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-12-10T02:03:52.035134" elapsed="0.023270"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-10T02:03:52.059603" elapsed="0.134132"/>
+</kw>
+<status status="PASS" start="2024-12-10T02:03:49.628483" elapsed="2.565657"/>
+</test>
+<status status="PASS" start="2024-12-10T02:03:49.462086" elapsed="2.733808"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Flask Ui Tests">Flask Ui Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
