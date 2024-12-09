@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    OperatingSystem
-Library    CustomLibrary   # If you create a custom library to load the driver
+# Library    CustomLibrary   # If you create a custom library to load the driver
 
 *** Variables ***
 ${URL}    http://localhost:5000
@@ -28,4 +28,4 @@ Create Chrome Options
     Set To Dictionary    ${chrome_options}    args    --disable-gpu
     Set To Dictionary    ${chrome_options}    args    --no-sandbox
     Set To Dictionary    ${chrome_options}    args    --remote-debugging-port=9222
-    [Return]    ${chrome_options}
+    RETURN    ${chrome_options}
